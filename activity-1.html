@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Student Contact</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
         html {
             height: 100%;
             font-family: 'Kanit', sans-serif;
+            /* background-color: #eaecef; */
         }
     </style>
 </head>
@@ -29,7 +30,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="home.html">หน้าหลัก <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="studentContact.html">งานรับเข้า </a>
                 </li>
                 <li class="nav-item">
@@ -70,7 +71,7 @@
                     </div>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="activity.html" id="navbarDropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         กิจกรรมนักศึกษา
@@ -95,115 +96,61 @@
             </ul>
         </div>
     </nav>
+
     <div class="container" style="margin-top: 30px;">
-        <div class="alert alert-primary" role="alert" style=""">
-                <h3>อัพเดตข้อมูลการติดต่อ</h3>
+        <div class="alert alert-primary" role="alert">
+            <h3>ดูข้อมูลโครงการกิจกรรม</h3>
         </div>
-        <div style=" padding: 15px">
-            <h2 style="margin-left:15px">ข้อมูลนักศึกษา</h2>
-            <div class="row">
-                <div class="col-sm">
-                    <br><img src="https://cdn2.iconfinder.com/data/icons/facebook-51/32/FACEBOOK_LINE-01-512.png"
-                        width="150px" height="150px" style="margin-left: 50px;">
-                </div>
-                <div class="col-sm">
-                    <p>รหัสนักศึกษา: 62130500212</p>
-                    <p>ชื่อ: นายธนพร สมบูรณ์แก้ว</p>
-                    <p>อาจารย์ที่ปรึกษาชั้นปี:<br>1. รศ.ดร.บัณฑิต วรรธนาภา<br>
-                        2. ผศ.ดร.ณรงค์ฤทธิ์ วราภรณ์</p>
-                </div>
-                <div class="col-sm" style="margin-right:10px">
-                    <p><span class="font-weight-bold">คณะ:</span> คณะเทคโนโลยีสารสนเทศ</p>
-                    <p>สาขาวิชา: วิทยาการคอมพิวเตอร์</p>
-                    <p>แผน: ภาษาอังกฤษ (International)</p>
-                </div>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ข้อมูลจำนวนชั่วโมงกิจกรรม</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. กิจกรรมบังคับให้เข้าร่วม โดยส่วนกลางเป็นผู้จัด</td>
+                    <td>0 ชั่วโมง</td>
+                </tr>
+
+                <tr>
+                    <td>2. กิจกรรมบังคับให้เข้าร่วม โดยคณะหรือภาควิชาเป็นผู้จัด</td>
+                    <td>3 ชั่วโมง</td>
+                </tr>
+
+                <tr>
+                    <td>3. กิจกรรมเลือกเสรี จัดขึ้นโดยองค์กรกิจกรรมนักศึกษา หรือหน่วยงานภายใน มจธ.</td>
+                    <td>41 ชั่วโมง</td>
+                </tr>
+
+                <tr>
+                    <td>ปัจจุบันได้เข้าร่วมโครงการทางกิจกรรมไปแล้วจำนวน</td>
+                    <td>44 ชั่วโมง</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="jumbotron">
+            <div class="container">
+                <h4 class="display-4">ข้อกำหนด</h4>
+                <p class="lead">นักศึกษาต้องเข้าร่วมกิจกรรม ตลอด ระยะเวลาศึกษา (ชั้นปีที่ 1 ถึง ชั้นปีสุดท้าย) ไม่ต่ำกว่า 15 กิจกรรม และมีจำนวนชั่วโมงกิจกรรมรวมไม่น้อยกว่า 100 ชั่วโมง
+                </p>
+                <ul>
+                    <li>
+                        กิจกรรมบังคับให้เข้าร่วม แบ่งเป็น
+                        <ul>
+                            <li>กิจกรรมส่วนกลางเป็นผู้จัด โดยต้องเข้าร่วมไม่น้อยกว่า 3 กิจกรรม มีจำนวนชั่วโมงที่เข้าร่วมกว่า 5 ชั่วโมง</li>
+                            <li>กิจกรรมที่คณะหรือภาควิชาเป็นผู้จัด โดยต้องเข้าร่วมไม่น้อยกว่า 4 กิจกรรม มีจำนวนชั่วโมงที่เข้าร่วมไม่น้อยกว่า 25 ชั่วโมง</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        กิจกรรมเลือกเสรี เป็นกิจกรรมที่จัดขึ้นโดยองค์กรกิจกรรมนักศึกษา หรือหน่วยงานภายใน มจธ. โดยต้องเข้าร่วมไม่น้อยกว่า 8 กิจกรรม มีจำนวนชั่วโมงที่เข้าร่วมไม่น้อยกว่า 60 ชั่วโมง
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="card">
-            <h5 class="card-header">ข้อมูลการติดต่อ</h5>
-            <div class="card-body">
-                <form>
-                    <div class="form-row">
-                        <div class="col-7">
-                            <input type="text" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Phone number">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" style="margin-top: 3%;">
-        <div class="card">
-            <h5 class="card-header">ที่อยู่ปัจจุบัน</h5>
-            <div class="card-body">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <label for="inputState">ประเทศ</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>ไทย</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group col">
-                            <label for="inputState">จังหวัด</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>กรุงเทพมหานคร</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group col">
-                            <label for="inputState">อำเภอ/เขต</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>ทุ่งครุ</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <label for="inputState">ตำบล/แขวง</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>บางมด</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group col">
-                            <label for="inputState">รหัสไปรษีย์</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>10000</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group col">
-                            <label for="inputState">บ้านเลขที่</label>
-                            <input type="text" class="form-control" placeholder="99/99">
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="d-flex justify-content-end">
-            <a href="studentContact.html"><button type="button" class="btn btn-success"
-                    style="margin-top: 13px; margin-left: 20px;">Save
-                </button></a>
-        </div>
-        <div style="height:100px;">
-
         </div>
     </div>
 
@@ -212,7 +159,9 @@
         © 2019 Copyright: KMUTT New Acis
     </div>
 
-    <!-- Further Information -->
+    <!-- <div style="height:12%; color:whitesmoke;background-color:#34495e ;" class="d-flex justify-content-center align-items-center">
+            © 2019 Copyright: KMUTT New Acis
+    </div> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
