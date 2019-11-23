@@ -13,6 +13,7 @@
         html {
             height: 100%;
             font-family: 'Kanit', sans-serif;
+            background-color: #4e5e70;
         }
     </style>
 </head>
@@ -27,21 +28,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">หน้าหลัก <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="homeDark.html">หน้าหลัก <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="studentContact_Dark.html">งานรับเข้า </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="studentContact.html">งานรับเข้า </a>
+                    <a class="nav-link" href="profileDark.html">ประวัตินศ. </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">ประวัตินศ. </a>
-                </li>
-                <li class="nav-item active dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="enrollment.html" id="navbarDropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         ลงทะเบียนรายวิชา
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="enrollment-1.html">ลงทะเบียนเรียน </a>
+                        <a class="dropdown-item" href="enrollment-1_Dark.html">ลงทะเบียนเรียน </a>
                         <a class="dropdown-item" href="enrollment-2.html">ลงทะเบียนล่าช้า </a>
                         <a class="dropdown-item" href="enrollment-3.html">ลดรายวิชา </a>
                         <a class="dropdown-item" href="enrollment-4.html">ชำระเงิน </a>
@@ -54,7 +55,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="schedule.html">ตารางสอน/สอบ </a>
+                    <a class="nav-link" href="schedule_Dark.html">ตารางสอน/สอบ </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="request.html" id="navbarDropdownMenuLink"
@@ -62,7 +63,7 @@
                         คำร้องผ่านเว็บ
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="request-1.html">ติดตามคำร้อง </a>
+                        <a class="dropdown-item" href="request-1_Dark.html">ติดตามคำร้อง </a>
                         <a class="dropdown-item" href="request-2.html">คำร้องขอเอกสารสำคัญทางการศึกษา </a>
                         <a class="dropdown-item" href="request-3.html">ยื่นคำร้องการลาต่างๆ </a>
                         <a class="dropdown-item" href="request-4.html">ยื่นคำร้องเกี่ยวกับการลงทะเบียน </a>
@@ -76,7 +77,7 @@
                         กิจกรรมนักศึกษา
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="activity-1.html">ดูข้อมูลโครงการกิจกรรม </a>
+                        <a class="dropdown-item" href="activity-1_Dark.html">ดูข้อมูลโครงการกิจกรรม </a>
                         <a class="dropdown-item" href="activity-2.html">โหวตโครงการ </a>
                         <a class="dropdown-item" href="activity-3.html">ลงทะเบียนเข้าร่วมโครงการ </a>
                         <a class="dropdown-item" href="activity-4.html">พิมพ์ใบขออนุญาตลาเรียน </a>
@@ -86,22 +87,18 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="studyResult.html">ผลการเรียน </a>
+                    <a class="nav-link" href="studyResult_Dark.html">ผลการเรียน </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">ออกจากระบบ </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="enrollment-1_Dark.html"><button type="button" class="btn btn-success " style="margin-left:70%;width:150px">Dark Mode</button></a> 
+                    <a class="nav-link" href="indexDark.html">ออกจากระบบ </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container" style="margin-top: 30px;">
+    <div class="container" style="margin-top: 30px;color:whitesmoke">
         <div class="alert alert-primary" role="alert">
-            <h3>ลงทะเบียนเรียนปกติ</h3>
+                <h3>อัพเดตข้อมูลการติดต่อ</h3>
         </div>
         <div style=" padding: 15px">
             <h2 style="margin-left:15px">ข้อมูลนักศึกษา</h2>
@@ -123,17 +120,98 @@
                 </div>
             </div>
         </div>
-        <div style="margin-top: 50px;">
-            <div class="alert alert-danger" role="alert">
-                <h5 style="text-align: center;">ยังไม่อยู่ในช่วงเวลาลงทะเบียนเรียน</h5>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header" style="background-color:#4e5e70;color:whitesmoke">ข้อมูลการติดต่อ</h5>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="col-7">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone number">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <div style="height:80px; margin-top:195px; color:whitesmoke;background-color:#34495e ;"
+
+    <div class="container" style="margin-top: 3%;">
+        <div class="card">
+            <h5 class="card-header" style="background-color:#4e5e70;color:whitesmoke">ที่อยู่ปัจจุบัน</h5>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="inputState">ประเทศ</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>ไทย</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="inputState">จังหวัด</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>กรุงเทพมหานคร</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="inputState">อำเภอ/เขต</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>ทุ่งครุ</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="inputState">ตำบล/แขวง</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>บางมด</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="inputState">รหัสไปรษีย์</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>10000</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="inputState">บ้านเลขที่</label>
+                            <input type="text" class="form-control" placeholder="99/99">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <a href="studentContact.html"><button type="button" class="btn btn-success"
+                    style="margin-top: 13px; margin-left: 20px;">Save
+                </button></a>
+        </div>
+        <div style="height:100px;">
+
+        </div>
+    </div>
+
+    <div style="height:80px; color:whitesmoke;background-color:#34495e ;"
         class="d-flex justify-content-center align-items-center">
         © 2019 Copyright: KMUTT New Acis
     </div>
-
 
     <!-- Further Information -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

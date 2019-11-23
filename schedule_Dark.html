@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Schedule & Timetable</title>
     <style>
         body,
         html {
@@ -28,13 +27,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">หน้าหลัก <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="homeDark.html">หน้าหลัก <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="studentContact.html">งานรับเข้า </a>
+                    <a class="nav-link" href="studentContact_Dark.html">งานรับเข้า </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="profile.html">ประวัตินศ. </a>
+                    <a class="nav-link" href="profileDark.html">ประวัตินศ. </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="enrollment.html" id="navbarDropdownMenuLink"
@@ -42,7 +41,7 @@
                         ลงทะเบียนรายวิชา
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="enrollment-1.html">ลงทะเบียนเรียน </a>
+                        <a class="dropdown-item" href="enrollment-1_Dark.html">ลงทะเบียนเรียน </a>
                         <a class="dropdown-item" href="enrollment-2.html">ลงทะเบียนล่าช้า </a>
                         <a class="dropdown-item" href="enrollment-3.html">ลดรายวิชา </a>
                         <a class="dropdown-item" href="enrollment-4.html">ชำระเงิน </a>
@@ -54,8 +53,8 @@
                         <a class="dropdown-item" href="enrollment-10.html">พิมพ์ใบเสร็จรับเงิน </a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="schedule.html">ตารางสอน/สอบ </a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="schedule_Dark.html">ตารางสอน/สอบ </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="request.html" id="navbarDropdownMenuLink"
@@ -63,7 +62,7 @@
                         คำร้องผ่านเว็บ
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="request-1.html">ติดตามคำร้อง </a>
+                        <a class="dropdown-item" href="request-1_Dark.html">ติดตามคำร้อง </a>
                         <a class="dropdown-item" href="request-2.html">คำร้องขอเอกสารสำคัญทางการศึกษา </a>
                         <a class="dropdown-item" href="request-3.html">ยื่นคำร้องการลาต่างๆ </a>
                         <a class="dropdown-item" href="request-4.html">ยื่นคำร้องเกี่ยวกับการลงทะเบียน </a>
@@ -77,7 +76,7 @@
                         กิจกรรมนักศึกษา
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="activity-1.html">ดูข้อมูลโครงการกิจกรรม </a>
+                        <a class="dropdown-item" href="activity-1_Dark.html">ดูข้อมูลโครงการกิจกรรม </a>
                         <a class="dropdown-item" href="activity-2.html">โหวตโครงการ </a>
                         <a class="dropdown-item" href="activity-3.html">ลงทะเบียนเข้าร่วมโครงการ </a>
                         <a class="dropdown-item" href="activity-4.html">พิมพ์ใบขออนุญาตลาเรียน </a>
@@ -86,105 +85,39 @@
                     </div>
                 </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="studyResult.html">ผลการเรียน </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="studyResult_Dark.html">ผลการเรียน </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">ออกจากระบบ </a>
+                    <a class="nav-link" href="indexDark.html">ออกจากระบบ </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html"><button type="button" class="btn btn-success " style="margin-left:70%;width:150px">Light Mode</button></a> 
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="container" style="height:51%; margin-top: 50px;">
+        <div class="d-flex justify-content-around" style="margin-top: 300px">
+            <div>
+                <a href="scheduleExam_Dark.html"><button type="button" class="btn btn-success btn-lg">Exam Schedule</button></a>
+                
+            </div>
 
-    <div class="container" style="margin-top: 30px;height:68.5%">
-        <div class="alert alert-primary" role="alert">
-            <h3>ผลการเรียน</h3>
+            <div>
+                <a href="scheduleStudy_Dark.html"><button type="button" class="btn btn-success btn-lg">Study Schedule</button></a>
+                
+            </div>
         </div>
 
-        <table class="table table-striped" style="color:whitesmoke;">
-            <thead>
-                <tr>
-                    <th scope="col-1">ลำดับ</th>
-                    <th scope="col">รหัสวิชา</th>
-                    <th scope="col">ชื่อวิชา</th>
-                    <th scope="col">หน่วยกิต</th>
-                    <th scope="col">เกรด</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>CSC100</td>
-                    <td>LEARNING HOW TO LEARN</td>
-                    <td>0</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>CSC101</td>
-                    <td>COMPUTING INVENTIONS AND INNOVATIONS</td>
-                    <td>1</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>CSC102</td>
-                    <td>INTRODUCTION TO PROGRAMMING</td>
-                    <td>3</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>CSC165</td>
-                    <td>DISCRETE MATHEMATICS</td>
-                    <td>3</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>GEN111</td>
-                    <td>MAN AND ETHICS OF LIVING</td>
-                    <td>3</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td>GEN121</td>
-                    <td>LEARNING AND PROBLEM SOLVING SKILLS</td>
-                    <td>3</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">7</th>
-                    <td>GEN231</td>
-                    <td>MIRACLE OF THINKING</td>
-                    <td>3</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">8</th>
-                    <td>LNG222</td>
-                    <td>ACADEMIC LISTENING AND SPEAKING</td>
-                    <td>3</td>
-                    <td>-</td>
-                </tr>
-
-
-            </tbody>
-        </table>
 
     </div>
-    <div style="height:10%;margin-top: 110px; color:whitesmoke;background-color:#34495e ;"
+    <div style="height:12%; color:whitesmoke;background-color:#34495e ; "
         class="d-flex justify-content-center align-items-center">
         © 2019 Copyright: KMUTT New Acis
     </div>
-
-    <!-- <div style="height:12%; color:whitesmoke;background-color:#34495e ;" class="d-flex justify-content-center align-items-center">
-            © 2019 Copyright: KMUTT New Acis
-    </div> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
